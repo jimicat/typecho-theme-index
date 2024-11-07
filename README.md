@@ -1,0 +1,1 @@
+# Index is a typecho theme inspired by @GTFOBins
