@@ -120,11 +120,6 @@ p {
 	border-bottom: 1px solid #919699;
 }
 
-.post_pic_img {
-    width: 100%;
-    height: 0;
-}
-
 /* lists */
 
 ul	{
@@ -229,4 +224,12 @@ textarea {
 
 img {
     max-width: 100%;
+}
+
+
+
+#copyright-info {
+    background: #f3f5f7;
+    margin: 1.5em 10px;
+    padding: 13px 45px;
 }

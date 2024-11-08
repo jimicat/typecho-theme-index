@@ -11,7 +11,7 @@
         <div><a href="mailto:941104c@gmail.com">Email</a></div>
         <div>Modify based on <a href="https://github.com/adityatelange/hugo-index/">Index</a></div>
         <div class="rss">
-            <a href="rss.xml">
+            <a href="feed">
                 <img src="<?php Helper::options()->themeUrl('images/rss.png'); ?>" alt="Subscribe to RSS Feed">
             </a>
         </div>

@@ -11,7 +11,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
 ?>
-<div class="col-mb-12 col-8" id="main" role="main">
+<div>
     <?php if (!($this->is('index')) and !($this->is('post'))): ?>
     <?php endif; ?>
 
@@ -28,33 +28,18 @@ $this->need('header.php');
     </div>
 
 
-    <?php
-// 初始化标签小工具，用于获取所有标签
-$tagWidget = Typecho_Widget::widget('Widget_Metas_Tag_Cloud');
-
-// 统计标签数量
-$tagCount = 0;
-while ($tagWidget->next()) {
-    $tagCount++;
-}
+<?php
+$totalPosts = postCount();
 ?>
 
 <?php
-// 初始化文章小工具，用于获取所有文章
-$postWidget = Typecho_Widget::widget('Widget_Contents_Post_Recent');
-
-// 统计文章数量
-$postCount = 0;
-while ($postWidget->next()) {
-    $postCount++;
-}
+$totalTags = tagCount();
 ?>
-
     <!-- 搜索框 -->
     <div class="searchBox">
         <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
             <input type="text" id="search-input" name="s" class="search"
-                placeholder="Search among <?php echo $postCount; ?> titles and <?php echo $tagCount; ?> tags..." />
+                placeholder="Search among <?php echo $totalPosts; ?> titles and <?php echo $totalTags; ?> tags..." />
         </form>
     </div>
 
