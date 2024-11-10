@@ -33,6 +33,15 @@
         </p>
     </div>
 </div>
+<script>
+    document.querySelectorAll('img[alt]').forEach(img => {
+        const altText = document.createElement('span');
+        altText.className = 'alt-text';
+        altText.textContent = img.alt;
+        img.insertAdjacentElement('afterend', altText);
+    });
+</script>
+
 
 <?php $this->need('comment.php'); ?>
 
