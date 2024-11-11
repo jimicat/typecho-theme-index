@@ -1,13 +1,13 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <!DOCTYPE HTML>
 <html>
-
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php $this->options->title(); ?></title>
     <!-- 使用url函数转换相关路径 -->
+    <link rel="shortcut icon" href="<?php $this->options->themeUrl('images/favicon.ico'); ?>" type="image/x-icon">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
     <?php if ($this->is('post')): ?>
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/markdown.css'); ?>">
@@ -37,7 +37,7 @@
                         <a style="text-decoration: none;" <?php if ($this->is('page', $pages->slug)): ?> class="current" <?php endif; ?>
                             href="<?php $pages->permalink(); ?>"
                             title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
-                        <?php endwhile; ?>
+                    <?php endwhile; ?>
                 </span>
 
 
