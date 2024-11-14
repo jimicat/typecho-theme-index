@@ -11,7 +11,7 @@
  * --------------- */
 
 
- :root {
+:root {
   --primary: rgba(0, 0, 0);
   --secondary: #065279;
   --secondary-hover: rgba(12, 2, 201, 0.1);
@@ -28,7 +28,7 @@ header h1 a {
 }
 
 body {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #F6F6F3;
   font-size: 15px;
   text-align: left;
@@ -36,7 +36,7 @@ body {
 }
 
 
-body > header > div > a:nth-child(3) {
+body>header>div>a:nth-child(3) {
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ header h1 {
   margin: 0;
 }
 
-body > header > p {
+body>header>p {
   margin: 20px 0 20px 0;
 }
 

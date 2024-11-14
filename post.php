@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<div class="content">
+<div class="content markdown-body">
 
     <div class="post-title"><?php $this->title() ?></div>
 
